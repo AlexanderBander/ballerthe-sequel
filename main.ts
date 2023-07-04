@@ -70,51 +70,23 @@ controller.player3.onButtonEvent(ControllerButton.Right, ControllerButtonEvent.P
         . f 5 5 5 5 5 5 5 5 5 5 5 5 f . 
         . f 5 5 5 5 5 5 5 5 5 5 5 5 f . 
         . f 5 5 5 5 5 5 5 5 5 5 5 5 f . 
-        . f 5 5 5 f 1 5 5 f 1 5 5 5 f . 
-        . f 5 5 5 f 1 5 5 f 1 5 5 5 f . 
+        . f 5 5 5 1 f 5 5 1 f 5 5 5 f . 
+        . f 5 5 5 1 f 5 5 1 f 5 5 5 f . 
         . f 5 5 5 5 5 5 5 5 5 5 5 5 f . 
         . f 5 5 5 5 5 5 5 5 5 5 5 5 f . 
         . f 5 5 f f f f f f f f 5 5 f . 
         . f 5 5 5 5 5 5 5 5 5 5 5 5 f . 
         . f 5 5 5 5 5 5 5 5 5 5 5 5 f . 
         . f 5 5 5 f f f f f 5 5 5 5 f . 
-        . . f 5 f . . . . . f 5 f f f . 
-        . f 5 5 f . . . . f 5 5 f . . . 
-        . f f f . . . . . f f f . . . . 
+        . f f 5 f . . . . . f 5 f f f . 
+        . . f 5 5 f . . . . f 5 5 f . . 
+        . . . f f f . . . . . f f f . . 
         `],
     500,
     false
     )
 })
 controller.player2.onButtonEvent(ControllerButton.Right, ControllerButtonEvent.Pressed, function () {
-    animation.runImageAnimation(
-    Mysprite2,
-    [img`
-        . . . . . . . . . . . . . . . . 
-        . f f f f f f f f f f f f f f . 
-        . f 9 9 9 9 9 9 9 9 9 9 9 9 f . 
-        . f 9 9 9 9 9 9 9 9 9 9 9 9 f . 
-        . f 9 9 9 9 9 9 9 9 9 9 9 9 f . 
-        . f 9 9 9 f 1 9 9 9 f 1 9 9 f . 
-        . f 9 9 9 f 1 9 9 9 f 1 9 9 f . 
-        . f 9 9 9 9 9 9 9 9 9 9 9 9 f . 
-        . f 9 9 9 9 9 9 9 9 9 9 9 9 f . 
-        . f 9 9 9 f f f f f 9 9 9 9 f . 
-        . f 9 9 9 9 9 9 9 9 9 9 9 9 f . 
-        . f 9 9 9 9 9 9 9 9 9 9 9 9 f . 
-        . f f f 9 9 9 9 9 9 9 9 f f f . 
-        . . . f 9 f f f f f 9 f . . . . 
-        . . f 9 9 f . . f 9 9 f . . . . 
-        . . f f f . . . f f f . . . . . 
-        `],
-    500,
-    false
-    )
-})
-controller.player4.onButtonEvent(ControllerButton.A, ControllerButtonEvent.Pressed, function () {
-    Mysprite4.vy = -100
-})
-controller.player2.onButtonEvent(ControllerButton.Left, ControllerButtonEvent.Pressed, function () {
     animation.runImageAnimation(
     Mysprite2,
     [img`
@@ -139,6 +111,34 @@ controller.player2.onButtonEvent(ControllerButton.Left, ControllerButtonEvent.Pr
     false
     )
 })
+controller.player4.onButtonEvent(ControllerButton.A, ControllerButtonEvent.Pressed, function () {
+    Mysprite4.vy = -100
+})
+controller.player2.onButtonEvent(ControllerButton.Left, ControllerButtonEvent.Pressed, function () {
+    animation.runImageAnimation(
+    Mysprite2,
+    [img`
+        . . . . . . . . . . . . . . . . 
+        . f f f f f f f f f f f f f f . 
+        . f 9 9 9 9 9 9 9 9 9 9 9 9 f . 
+        . f 9 9 9 9 9 9 9 9 9 9 9 9 f . 
+        . f 9 9 9 9 9 9 9 9 9 9 9 9 f . 
+        . f 9 9 9 f 1 9 9 9 f 1 9 9 f . 
+        . f 9 9 9 f 1 9 9 9 f 1 9 9 f . 
+        . f 9 9 9 9 9 9 9 9 9 9 9 9 f . 
+        . f 9 9 9 9 9 9 9 9 9 9 9 9 f . 
+        . f 9 9 9 f f f f f 9 9 9 9 f . 
+        . f 9 9 9 9 9 9 9 9 9 9 9 9 f . 
+        . f 9 9 9 9 9 9 9 9 9 9 9 9 f . 
+        . f f f 9 9 9 9 9 9 9 9 f f f . 
+        . . . f 9 f f f f f 9 f . . . . 
+        . . f 9 9 f . . f 9 9 f . . . . 
+        . . f f f . . . f f f . . . . . 
+        `],
+    500,
+    false
+    )
+})
 controller.player1.onButtonEvent(ControllerButton.Right, ControllerButtonEvent.Pressed, function () {
     animation.runImageAnimation(
     mySprite,
@@ -146,8 +146,8 @@ controller.player1.onButtonEvent(ControllerButton.Right, ControllerButtonEvent.P
         . . f f f f f f f f f f f f . . 
         . . f 2 2 2 2 2 2 2 2 2 2 f . . 
         . . f 2 2 2 2 2 2 2 2 2 2 f . . 
-        . . f 2 2 2 1 1 2 2 1 1 2 f . . 
-        . . f 2 2 2 f f 2 2 f f 2 f . . 
+        . . f 2 2 2 1 f 2 2 1 f 2 f . . 
+        . . f 2 2 2 1 f 2 2 1 f 2 f . . 
         . . f 2 2 2 2 2 2 2 2 2 2 f . . 
         . . f 2 2 2 2 2 2 2 2 2 2 f . . 
         . . f 2 2 2 2 2 2 2 2 2 2 f . . 
@@ -249,17 +249,17 @@ controller.player3.onButtonEvent(ControllerButton.Left, ControllerButtonEvent.Pr
         . f 5 5 5 5 5 5 5 5 5 5 5 5 f . 
         . f 5 5 5 5 5 5 5 5 5 5 5 5 f . 
         . f 5 5 5 5 5 5 5 5 5 5 5 5 f . 
-        . f 5 5 5 1 f 5 5 1 f 5 5 5 f . 
-        . f 5 5 5 1 f 5 5 1 f 5 5 5 f . 
+        . f 5 5 5 f 1 5 5 f 1 5 5 5 f . 
+        . f 5 5 5 f 1 5 5 f 1 5 5 5 f . 
         . f 5 5 5 5 5 5 5 5 5 5 5 5 f . 
         . f 5 5 5 5 5 5 5 5 5 5 5 5 f . 
         . f 5 5 f f f f f f f f 5 5 f . 
         . f 5 5 5 5 5 5 5 5 5 5 5 5 f . 
         . f 5 5 5 5 5 5 5 5 5 5 5 5 f . 
         . f 5 5 5 f f f f f 5 5 5 5 f . 
-        . f f 5 f . . . . . f 5 f f f . 
-        . . f 5 5 f . . . . f 5 5 f . . 
-        . . . f f f . . . . . f f f . . 
+        . . f 5 f . . . . . f 5 f f f . 
+        . f 5 5 f . . . . f 5 5 f . . . 
+        . f f f . . . . . f f f . . . . 
         `],
     500,
     false
@@ -290,8 +290,8 @@ controller.player1.onButtonEvent(ControllerButton.Left, ControllerButtonEvent.Pr
         . . f f f f f f f f f f f f . . 
         . . f 2 2 2 2 2 2 2 2 2 2 f . . 
         . . f 2 2 2 2 2 2 2 2 2 2 f . . 
-        . . f 2 2 2 1 1 2 2 1 1 2 f . . 
-        . . f 2 2 2 f f 2 2 f f 2 f . . 
+        . . f 2 2 2 f 1 2 2 f 1 2 f . . 
+        . . f 2 2 2 f 1 2 2 f 1 2 f . . 
         . . f 2 2 2 2 2 2 2 2 2 2 f . . 
         . . f 2 2 2 2 2 2 2 2 2 2 f . . 
         . . f 2 2 2 2 2 2 2 2 2 2 f . . 
@@ -420,3 +420,4 @@ scaling.scaleByPixels(bad_man, 10, ScaleDirection.Horizontally, ScaleAnchor.Midd
 scaling.scaleByPixels(bad_man, 10, ScaleDirection.Vertically, ScaleAnchor.Middle)
 tiles.placeOnRandomTile(bad_man, assets.tile`myTile5`)
 game.setGameOverEffect(true, effects.clouds)
+tiles.placeOnRandomTile(mySprite, assets.tile`transparency16`)
